@@ -1,3 +1,4 @@
+
 /* *********************************************************************************************************************
 	One% CSS Grid - 12 Columns Fluid CSS Grid System
 
@@ -124,7 +125,7 @@
 // Colours //
 // ============================================================ //
 
-$primary: #F03838;
+$primary: #c2c5cc;
 $secondary: #d9dadb;
 $background: url("../img/bg.png");
 
@@ -144,6 +145,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 33px;
     text-transform: none;
+    color:#f1f3f5;
 }
 
 h1 { font-size: 26px; }
@@ -314,21 +316,21 @@ table {
 /* ============================================================ */
 
 .site-header {
-    padding: 100px 0 0;
+    padding: 55px 0 0;
     overflow: auto;
     text-align: center;
     text-transform: uppercase;
 	background:url(../img/header.png);
-	min-height:558px;
+	min-height:768px;
 }
 
 .site-title-wrapper {
     display: table;
-    margin: 0 auto;
-	background:white;
+    margin: 10% auto 0 auto;
+	background:none;
 }
 .titlebox{
-	background: #1b1b1d;
+	background: rgba(24,25,27,.95);
 }
 .site-title {
     float: left;
@@ -349,17 +351,26 @@ table {
 }
 .site-logo {
     display: block;
+    margin:0 auto;
+    opacity:.8;
 
-    img { margin: 0; }
+    img { margin: 0 auto; width:auto; }
+
+}
+.site-logo:hover{
+    opacity:1.0;
 }
 .descbox{
-	background:white;
-	font-size:21px;
+	background:none;
+    width:97.5%;
+	font-size:25px;
+    letter-spacing:3px;
 	text-transform:none;
-	color:#1b1b1d;
+	color:#26282e;
 	margin-left:none;
+    text-align:right;
 	float:left;
-	line-height:77px;
+	line-height:auto;
 	font-family: volkhov;
 	font-style:italic;
 	}
@@ -367,6 +378,7 @@ table {
 .site-nav {
     list-style: none;
     margin: 28px 0 10px;
+    text-align:right;
 }
 
 .site-nav-item {
@@ -375,12 +387,18 @@ table {
     font-weight: 700;
     margin: 0 10px;
 
-    a:hover { color: #424242; }
+    a:hover { color: #808997; }
 }
 
 /* ============================================================ */
 /* Post */
 /* ============================================================ */
+
+code, kbd, pre, samp{
+    background:#2b2c2e;
+    border:#1e1f22;
+    color:#929496;
+}
 
 #latest-post { display: none; }
 
@@ -423,9 +441,11 @@ table {
 }
 
 .post-content {
+    padding: 35px;
+    background:#34363b;
+    color:#dddee0;
     a:hover {
         border-bottom: 1px dotted $primary;
-        padding: 0 0 2px;
     }
 
     &:last-child { margin-bottom: 0; }
